@@ -54,6 +54,11 @@
             color: inherit;
             box-shadow: 0 4px 6px rgba(0,0,0,0.04);
             border: 1px solid #eaeaea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
         }
         .card-content { flex: 1; padding-left: 15px; }
         .card-title { font-weight: bold; font-size: 17px; color: #0b5d3f; margin-bottom: 5px; }
@@ -67,6 +72,16 @@
             align-items: center;
             justify-content: center;
             font-size: 20px;
+            flex-shrink: 0;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0b5d3f;
+            margin: 25px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #d4a359;
+            display: inline-block;
         }
     </style>
 </head>
@@ -80,19 +95,52 @@
     </div>
 
     <div class="intro">
-        يرجى من ولي أمر الطالب والطالب الاطلاع على الروابط التالية وتعبئة النماذج المطلوبة، والانضمام إلى مجتمع المدرسة لمتابعة كل جديد.
+        يرجى من ولي أمر الطالب والطالب الاطلاع على الروابط التالية وتعبئة النماذج المطلوبة، والانضمام إلى مجتمع المدرسة وقنوات الصفوف لمتابعة كل جديد.
     </div>
 
     <div class="container">
 
-        <!-- بطاقة الواتساب -->
+        <!-- بطاقة الواتساب العامة -->
         <a href="https://chat.whatsapp.com/FnuZhY2cBJKK8Ovu89GzUC" class="card" target="_blank">
             <div class="card-content">
-                <div class="card-title">مجتمع المدرسة على واتساب</div>
-                <div class="card-desc">انضم لمتابعة الإعلانات والمستجدات المدرسية أولاً بأول</div>
+                <div class="card-title">مجتمع المدرسة العام على واتساب</div>
+                <div class="card-desc">انضم لمتابعة الإعلانات والمستجدات المدرسية العامة أولاً بأول</div>
             </div>
             <div class="icon-box">💬</div>
         </a>
+
+        <!-- قسم قنوات الصفوف الدراسية -->
+        <div class="section-title">قنوات الصفوف الدراسية (واتساب)</div>
+
+        <!-- قناة الصف الرابع -->
+        <a href="https://whatsapp.com/channel/0029VbDOpdb4Spk9MSoave23" class="card" target="_blank">
+            <div class="card-content">
+                <div class="card-title">قناة الصف الرابع الابتدائي</div>
+                <div class="card-desc">الانضمام لقناة واتساب لمتابعة إعلانات وأنشطة الصف الرابع</div>
+            </div>
+            <div class="icon-box">📢</div>
+        </a>
+
+        <!-- قناة الصف الخامس -->
+        <a href="https://whatsapp.com/channel/0029VbDfvebFsn0c25SaH802" class="card" target="_blank">
+            <div class="card-content">
+                <div class="card-title">قناة الصف الخامس الابتدائي</div>
+                <div class="card-desc">الانضمام لقناة واتساب لمتابعة إعلانات وأنشطة الصف الخامس</div>
+            </div>
+            <div class="icon-box">📢</div>
+        </a>
+
+        <!-- قناة الصف السادس -->
+        <a href="https://whatsapp.com/channel/0029Vb8oACk2f3ERt6nqT02B" class="card" target="_blank">
+            <div class="card-content">
+                <div class="card-title">قناة الصف السادس الابتدائي</div>
+                <div class="card-desc">الانضمام لقناة واتساب لمتابعة إعلانات وأنشطة الصف السادس</div>
+            </div>
+            <div class="icon-box">📢</div>
+        </a>
+
+        <!-- قسم النماذج واللوائح -->
+        <div class="section-title">النماذج واللوائح الرسمية</div>
 
         <!-- بطاقة حصر الحالات -->
         <a href="https://forms.gle/5UpqjS2UMMm4QaXw9" class="card" target="_blank">
@@ -121,7 +169,7 @@
             <div class="icon-box">📖</div>
         </a>
 
-        <!-- بطاقة نافس الجديدة -->
+        <!-- بطاقة نافس -->
         <a href="https://sultansch2026.github.io/ahmad/" class="card" target="_blank">
             <div class="card-content">
                 <div class="card-title">بوابة التدريب الذكي لاختبارات نافس</div>
